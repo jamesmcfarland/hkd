@@ -1,0 +1,60 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.9286263,54.59985 ]
+    },
+    "properties": {
+    "location":"Belfast Centre",
+    "nitrogen dioxide":26.24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.8667516,54.595306 ]
+    },
+    "properties": {
+    "location":"Belfast Newtownards Road",
+    "nitrogen dioxide":20.4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.9234578,54.587666 ]
+    },
+    "properties": {
+    "location":"Belfast Ormeau Road",
+    "nitrogen dioxide":20.25
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.9746724,54.572719 ]
+    },
+    "properties": {
+    "location":"Belfast Stockman's Lane",
+    "nitrogen dioxide":29.7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.9488546,54.591864 ]
+    },
+    "properties": {
+    "location":"Belfast Westlink Roden Street",
+    "nitrogen dioxide":29.36
+    }
+  }
+]
+}
