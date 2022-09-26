@@ -12,7 +12,7 @@
     <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
     <script src="data.js" defer></script>
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -20,7 +20,22 @@
     <title>HKD</title>
   </head>
   <body>
-    <button id="btn">enable heatmap</button>
-    <div id="map"></div>
+    <div id="content">
+      <div id="header">
+        <h2>Belfast Air Quality vs. Trees</h2>
+
+        <button id="btn">disable heatmap</button>
+        <p>
+          This was built as a part of the 2022 HKD hackathon, by Group21. The
+          larger the heatmap circle is, the worse the air quality in that area.
+          Each cylinder on the map is a real tree in Belfast city. We used <a href="https://www.airqualityni.co.uk/" rel="noopener noreferrer" target="_blank" >this</a>
+          and <a href="https://www.opendatani.gov.uk/dataset/belfast-trees" rel="noopener noreferrer" target="_blank" >this</a> as our datasets. The graphic shows that there is
+          a link between tree density and air quality, and could be used by
+          councils to make infomred decisions about improving air quality in a
+          given area
+        </p>
+      </div>
+      <div id="map">loading</div>
+    </div>
   </body>
 </html>

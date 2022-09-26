@@ -31,16 +31,7 @@ document.body.onload = () => {
             height: 50
         }));
 
-        // var source2 = new atlas.source.DataSource();
-        // source2.importDataFromUrl("heatmap.geojson")
-        // map.sources.add(source2)
-        // map.layers.add(new atlas.layer.HeatMapLayer(source2, null, {
-        //     radius:100,
-        //     fillOpacity: 0.5,
-        //     weight:10,
-        // }, "label"));
-
-        fetch("http://localhost:5500/heatmap.geojson")
+        fetch("heatmap.geojson")
             .then(res => res.json())
             .then(out =>
                 {
@@ -57,8 +48,12 @@ document.body.onload = () => {
                             radius: feats[i].properties["nitrogen dioxide"]*11,
                             opacity: 0.25,
                         }))
-                        document.getElementById("btn").addEventListener("click", ()=>{
+                        let btn = document.getElementById("btn");
+                        btn.addEventListener("click", ()=>{
+
                            src.clear()
+                           btn.setAttribute("disabled","true")
+                           btn.innerHTML = "refresh to enable heatmap"
                         })
                       
                     }
